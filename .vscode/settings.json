@@ -3,6 +3,7 @@
 
   "git.ignoreLimitWarning": true,
   "editor.renderWhitespace": "all",
+  "files.autoSave": "afterDelay",
 
   // The number of spaces a tab is equal to. This setting is overridden
   // based on the file contents when `editor.detectIndentation` is true.
@@ -39,5 +40,8 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
+  "vscode-janus-debug.uploadOnSave": [
+    "test"
+  ],
 
 }
