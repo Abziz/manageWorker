@@ -81,15 +81,7 @@ If the api is external, link to api documentation. If not describe your api incl
 
 [API document](https://documenter.getpostman.com/view/11604308/SztG3krs?version=latest#aa9fc539-c3d4-4be8-83ba-33ec3f4de65b)
 
-## Database
 
-Explaining what database (and version) has been used. Provide download links.
-Documents your database design and schemas, relations etc... 
 
-## Licensing
-
-State what the license is and how to find the text version of the license.
-=======
-# soft-eng-2020-Aviv
 test
 >>>>>>> 4e65231457cdb3b2fe053720640b81c1a82a7a47
