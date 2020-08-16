@@ -10,6 +10,7 @@ A quick introduction of the minimal setup you need to get a hello world up & run
 ```shell
 npm init
 npm install express
+npm install -g eslint
 npm install nodemon -D
 ```
 
