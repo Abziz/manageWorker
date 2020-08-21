@@ -17,7 +17,6 @@ What is needed to set up the dev environment. For instance, global dependencies 
 
 ### Setting up Dev
 Download extensions in VScode:
-* [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 * [GitHub Pull Requests and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
 * [ESlient](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 * [Node.js Modules intellisense](https://marketplace.visualstudio.com/items?itemName=leizongmin.node-module-intellisense)
@@ -68,7 +67,10 @@ Explain your code style and show how to check it.
 
 If the api is external, link to api documentation. If not describe your api including authentication methods as well as explaining all the endpoints with their required parameters.
 
-[API document](https://documenter.getpostman.com/view/11604308/SztG3krs?version=latest#aa9fc539-c3d4-4be8-83ba-33ec3f4de65b)
+
+* [API document Node.js](https://nodejs.org/api/)
+* [API document Node.js-HTTP](https://nodejs.org/api/http.html)
+* [API document postman](https://documenter.getpostman.com/view/11604308/SztG3krs?version=latest#aa9fc539-c3d4-4be8-83ba-33ec3f4de65b)
 
 
 
