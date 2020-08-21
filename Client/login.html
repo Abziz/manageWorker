@@ -1,0 +1,28 @@
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+
+<body>
+    <form action="login_page.php" method="post">
+        <div class="imgcontainer">
+            <img type = "avatar" src="avatar.gif" alt="Avatar" class="avatar">
+        </div>
+        <br />
+        
+        <div name="loginbox" class="container">
+            <label for="loginbox"><h1><u>Login:</u></h1></label>
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit">Login</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+            <a href="#"><span class="psw" style="float: right;">Forgot password?</span></a>
+        </div>
+    </form>
+</body>

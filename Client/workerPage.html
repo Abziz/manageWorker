@@ -1,0 +1,47 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="workerPage.css">
+    <title>Worker Page</title>
+    Choose an order to approve.
+</head>
+
+<body style="background-color: rgb(224, 235, 252);">
+    <form>
+        <div class="dropdown">
+            <select name="orders" id="orders">
+                <option value="default">Please select an order to evaluate</option>
+                <!-- TODO: JS to add all orders from DB to dropdown menu-->
+            </select>
+        </div>
+        <br>
+        <div class="ordersTable">
+            <table>
+                <tr type="firstRow">
+                    <td>
+                        Order ID
+                    </td>
+                    <td>
+                        Client Name
+                    </td>
+                    <td>
+                        Quantity
+                    </td>
+                    <td>
+                        Product Name
+                    </td>
+                    <td>
+                        Price
+                    </td>
+                    <td>
+                        Select all<br>
+                        <input type="checkbox">
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>HI IM DAVID</td>
+                </tr>
+                <!-- TODO: JS update table with all the items in the selected order -->
+            </table>
+        </div>
+    </form>
+</body>
