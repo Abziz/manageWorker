@@ -1,28 +1,7 @@
 
 # ManageWorker
 
-A brief description of your project, what it is used for.
-
-## Installing / Getting started
-
-A quick introduction of the minimal setup you need to get a hello world up & running.
-
-```shell
-npm init
-npm install express
-npm install -g eslint
-npm install nodemon -D
-```
-
-## Running
-
-Here you should say what actually happens when you execute the code above.
-
-To start the program, run the following command:
-
-```shell
-npm start
-```
+..
 
 ## Developing
 
@@ -37,16 +16,23 @@ What is needed to set up the dev environment. For instance, global dependencies 
 * [Git Bash](https://git-scm.com/downloads)
 
 ### Setting up Dev
+Download extensions in VScode:
+[GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+[GitHub Pull Requests and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
+[ESlient](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+[Node.js Modules intellisense](https://marketplace.visualstudio.com/items?itemName=leizongmin.node-module-intellisense)
+[LiveServer](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
-Here's a brief intro about what a developer must do in order to start developing
-the project further:
 
 ```shell
-git clone https://github.com/your/your-project.git
+git clone https://github.com/AvivWeiz/manageWorker.git
 cd your-project/
-npm install
+npm init
+npm install express
+npm install -g eslint
+npm install nodemon -D
 ```
-
+ 
 And state what happens step-by-step. If there is any virtual environment, local server or database feeder needed, explain here.
 
 ### Deploying / Publishing
