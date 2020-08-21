@@ -17,11 +17,11 @@ What is needed to set up the dev environment. For instance, global dependencies 
 
 ### Setting up Dev
 Download extensions in VScode:
-[GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
-[GitHub Pull Requests and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
-[ESlient](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-[Node.js Modules intellisense](https://marketplace.visualstudio.com/items?itemName=leizongmin.node-module-intellisense)
-[LiveServer](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+* [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+* [GitHub Pull Requests and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
+* [ESlient](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+* [Node.js Modules intellisense](https://marketplace.visualstudio.com/items?itemName=leizongmin.node-module-intellisense)
+* [LiveServer](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
 
 ```shell
