@@ -26,7 +26,7 @@ Download extensions in VScode:
 ```shell
 git clone https://github.com/AvivWeiz/manageWorker.git
 cd your-project/
-npm init
+npm init -y
 npm install express
 npm install -g eslint
 npm install nodemon -D
