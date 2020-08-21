@@ -1,12 +1,13 @@
 <head>
     <title>Login</title>
     <link rel="stylesheet" type="text/css" href="login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/> 
 </head>
 
 <body>
     <form action="login_page.php" method="post">
         <div class="imgcontainer">
-            <img type = "avatar" src="avatar.gif" alt="Avatar" class="avatar">
+            <img type = "avatar" src="art/avatar.gif" alt="Avatar" class="avatar">
         </div>
         <br />
         
@@ -18,11 +19,13 @@
             <label for="psw"><b>Password</b></label>
             <input type="password" placeholder="Enter Password" name="psw" required>
 
-            <button type="submit">Login</button>
+            <button type="submit" formaction="workerPage.html">Login</button>
             <label>
                 <input type="checkbox" checked="checked" name="remember"> Remember me
             </label>
-            <a href="#"><span class="psw" style="float: right;">Forgot password?</span></a>
+            <a href="forgotPass.html"><span class="psw" style="float: right;">Forgot password?</span></a>
+            <br>
+            <a href="signup.html"><span class="sign up" style="float: left;">Don't have an account yet? sign up NOW!</span></a>
         </div>
     </form>
 </body>
