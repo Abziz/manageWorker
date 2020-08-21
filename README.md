@@ -16,7 +16,7 @@ What is needed to set up the dev environment. For instance, global dependencies 
 * [Git Bash](https://git-scm.com/downloads)
 
 ### Setting up Dev
-Download extensions in VScode:
+Install VScode extensions:
 * [GitHub Pull Requests and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
 * [ESlient](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 * [Node.js Modules intellisense](https://marketplace.visualstudio.com/items?itemName=leizongmin.node-module-intellisense)
