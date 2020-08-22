@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/AvivWeiz/manageWorker#readme",
   "devDependencies": {
+    "eslint": "^7.7.0",
+    "eslint-plugin-filenames": "^1.3.2",
+    "eslint-plugin-security": "^1.4.0",
     "nodemon": "^2.0.4"
   },
   "dependencies": {
