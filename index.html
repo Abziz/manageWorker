@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Fetching</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+  </head>
+  <body>
+  <script>
+    const url = 'http://127.0.0.1:80';
+
+    fetch('http://127.0.0.1:80', {method: "GET"}).then(res => res.text()).then( x => console.log(x));
+
+    </script>
+  </body>
+</html>
