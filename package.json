@@ -1,0 +1,26 @@
+{
+  "name": "manageworker",
+  "version": "1.0.0",
+  "description": "A brief description of your project, what it is used for.",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AvivWeiz/manageWorker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AvivWeiz/manageWorker/issues"
+  },
+  "homepage": "https://github.com/AvivWeiz/manageWorker#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
