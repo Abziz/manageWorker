@@ -1,0 +1,46 @@
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script> 
+</head>
+
+<body>
+    <form >
+        <div class="imgcontainer">
+            <img type = "avatar" src="art/avatar.gif" alt="Avatar" class="avatar">
+        </div>
+        <br />
+        
+        <div name="loginbox" class="container">
+            <label for="loginbox"><h1><u>Login:</u></h1></label>
+            <label for="uname"><b>Username</b></label>
+            <input type="text" id="name" placeholder="Enter Username" name="uname" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" id="pass" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit" onclick="test(this)">Login</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+            <a href="forgotPass.html"><span class="psw" style="float: right;">Forgot password?</span></a>
+            <br>
+            <a href="signup.html"><span class="sign up" style="float: left;">Don't have an account yet? sign up NOW!</span></a>
+        </div>
+    </form>
+</body>
+<script type="text/javascript">
+  function test(){
+    let user=$('#name').val();
+    let pass=$('#pass').val();
+    if((user=="admin")&&(pass=="admin")) // Check with DB 
+    {
+        window.alert("logging");      //redirect to the right page
+        return true;
+    }
+    else
+        window.alert("Username or Password Incorrect");
+        return false;
+  }
+</script>
