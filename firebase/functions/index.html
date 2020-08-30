@@ -1,46 +1,62 @@
+<html>
 <head>
-    <title>Login</title>
-    <link rel="stylesheet" type="text/css" href="css/login.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script> 
+  <title>Scanner Shop</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="style.css" />
+   -->
+   <link rel="stylesheet" type="text/css" href="login.css">
+
 </head>
-
 <body>
-    <form >
-        <div class="imgcontainer">
-            <img type = "avatar" src="art/avatar.gif" alt="Avatar" class="avatar">
-        </div>
-        <br />
-        
-        <div name="loginbox" class="container">
-            <label for="loginbox"><h1><u>Login:</u></h1></label>
-            <label for="uname"><b>Username</b></label>
-            <input type="text" id="name" placeholder="Enter Username" name="uname" required>
 
-            <label for="psw"><b>Password</b></label>
-            <input type="password" id="pass" placeholder="Enter Password" name="psw" required>
+  <div class="imgcontainer">
+    <img type = "avatar" src="art/avatar.gif" alt="Avatar" class="avatar">
+</div>
+<br />
 
-            <button type="submit" onclick="test(this)">Login</button>
-            <label>
-                <input type="checkbox" checked="checked" name="remember"> Remember me
-            </label>
-            <a href="forgotPass.html"><span class="psw" style="float: right;">Forgot password?</span></a>
-            <br>
-            <a href="signup.html"><span class="sign up" style="float: left;">Don't have an account yet? sign up NOW!</span></a>
-        </div>
-    </form>
+  <div id="login_div" class="main-div">
+    <label for="loginbox"><h1><u>Welcome Customer! Please Login:</u></h1></label>
+    <label for="uname"><b>Username</b></label>
+    <input type="text" id="email_field" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" id="password_field" placeholder="Enter Password" name="psw" required>
+
+    <button onclick="login()">Login</button>
+    <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+    <a href="forgotPass"><span class="psw" style="float: right;">Forgot password?</span></a>
+    <br>
+
+</div>
+
+<div id="user_div" class="loggedin-div">
+  <h3>Welcome User</h3>
+  <p id="user_para">Welcome to Scanner Shop! You're currently logged in.</p>
+  <a href="worker">Account details</span></a>
+  <button onclick="logout()">Logout</button>
+  <a href="signup"><button>sign up new user</button> </a>
+</div>
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    let firebaseConfig = {
+      apiKey: "AIzaSyDPHPnY-OEUMQ_79r2eFmrSOPN5Ajc-7K0",
+      authDomain: "sacnnershop.firebaseapp.com",
+      databaseURL: "https://sacnnershop.firebaseio.com",
+      projectId: "sacnnershop",
+      storageBucket: "sacnnershop.appspot.com",
+      messagingSenderId: "743639413044",
+      appId: "1:743639413044:web:f7010c06eb14558a79b561",
+      measurementId: "G-0DCJTMZR0J"
+    };
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="auth.js"></script>
+
 </body>
-<script type="text/javascript">
-  function test(){
-    let user=$('#name').val();
-    let pass=$('#pass').val();
-    if((user=="admin")&&(pass=="admin")) // Check with DB 
-    {
-        window.alert("logging");      //redirect to the right page
-        return true;
-    }
-    else
-        window.alert("Username or Password Incorrect");
-        return false;
-  }
-</script>
+</html>

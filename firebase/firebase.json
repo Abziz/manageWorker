@@ -5,9 +5,9 @@
     ]
   },
   "hosting": {
-    "public": "public",
+    "public": "Public",
     "rewrites": [{
-      "source": "/",
+      "source": "**",
       "function": "app"
     }],
     "ignore": [
