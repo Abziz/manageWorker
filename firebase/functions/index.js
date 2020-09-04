@@ -8,7 +8,7 @@ let fs = require('fs');
 app.use(express.static(__dirname));
 
 app.get('/', (req, res) => {
-  fs.readFile(__dirname + '/index.html', null, (error, data) => {
+  fs.readFile(__dirname + 'html/index.html', null, (error, data) => {
     if (error) {
       res.writeHead(404);
       // eslint-disable-next-line no-undef
@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/worker', (req, res) => {
-  fs.readFile(__dirname + '/workerPage.html', null, (error, data) => {
+  fs.readFile(__dirname + 'html/workerPage.html', null, (error, data) => {
     if (error) {
       res.writeHead(404);
       // eslint-disable-next-line no-undef
@@ -34,7 +34,7 @@ app.get('/worker', (req, res) => {
 });
 
 app.get('/forgotPass', (req, res) => {
-  fs.readFile(__dirname + '/forgotPass.html', null, (error, data) => {
+  fs.readFile(__dirname + 'html/forgotPass.html', null, (error, data) => {
     if (error) {
       res.writeHead(404);
       // eslint-disable-next-line no-undef
@@ -47,7 +47,7 @@ app.get('/forgotPass', (req, res) => {
 });
 
 app.get('/login', (req, res) => {
-  fs.readFile(__dirname + '/index.html', null, (error, data) => {
+  fs.readFile(__dirname + 'html/index.html', null, (error, data) => {
     if (error) {
       res.writeHead(404);
       // eslint-disable-next-line no-undef
@@ -60,7 +60,7 @@ app.get('/login', (req, res) => {
 });
 
 app.get('/signup', (req, res) => {
-  fs.readFile(__dirname + '/signup.html', null, (error, data) => {
+  fs.readFile(__dirname + 'html/signup.html', null, (error, data) => {
     if (error) {
       res.writeHead(404);
       // eslint-disable-next-line no-undef

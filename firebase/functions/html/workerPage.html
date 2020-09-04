@@ -1,0 +1,22 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/workerPage.css">
+    <title>Worker Page</title>
+    <iframe src="common/userInterface.html" name="userInterface" allowTransparency="true" scrolling="no" frameborder="0"
+        style="width: auto; float:right">
+    </iframe>
+</head>
+
+<body style="background-color: rgb(224, 235, 252);">
+    <form>
+        <div type="dropdown">
+            Choose an order to approve:<br>
+            <select name="selectMenu" id="selectMenu" style="width: max-content;">
+                <option value="default">-- Select --</option>
+                <!-- TODO: JS to add all orders from DB to dropdown menu-->
+            </select>
+        </div>
+        <iframe src="common/productsTable.html" name="common/productsTable" allowTransparency="true" scrolling="no" frameborder="0"
+            style="width: 100%;">
+        </iframe>
+    </form>
+</body>
