@@ -1,0 +1,8 @@
+
+div[type=userInt]{
+    float: right;
+}
+div[type=dropdown]{
+    float: left;
+}
+
