@@ -22,7 +22,12 @@
     </label>
     <a href="forgotPass"><span class="psw" style="float: right;">Forgot password?</span></a>
     <br>
-
+    <form id="workerForm" action="add-worker" method="POST">
+      <input type="text" name="email" placeholder="email">
+      <input type="password" name='password' placeholder="password">
+      <input type="password" name='passwordConfirm' placeholder="password confirm">
+      <button type="submit"> add worker</button>
+    </form>
 </div>
 <!--
 <div id="user_div" class="loggedin-div">
@@ -36,6 +41,7 @@
 
 
   <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  
   <script>
     // Initialize Firebase
     let firebaseConfig = {
@@ -51,6 +57,26 @@
     firebase.initializeApp(firebaseConfig);
   </script>
   <script src="auth.js"></script>
-
+  <script type="text/javascript" defer>
+    const form = document.getElementById('workerForm');
+    form.addEventListener('submit',async (ev)=>{
+      ev.preventDefault();
+      const email = document.querySelector('input[name="email"]').value;
+      const password = document.querySelector('input[name="password"]').value;
+      const passwordConfirm = document.querySelector('input[name="passwordConfirm"]').value;
+      const body = { email,password,passwordConfirm};
+      try {
+        const res = await fetch('/add-worker',{
+          method:'POST',
+          headers:{
+            'Content-Type':'application/json'
+          },
+        body:JSON.stringify(body)}).then(res => res.json());
+        console.log(res,'success');
+      }catch(err){
+        console.error(err);
+      }
+    });
+  </script>
 </body>
 </html>

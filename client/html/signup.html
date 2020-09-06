@@ -4,7 +4,7 @@
 </head>
 
 <body>
-    <form>
+    <form action="/signup" method="POST">
         <div name="signupbox" class="container">
         <label for="signupbox"><h1><u>Sign-up:</u></h1></label>
             <label for="uname"><b>E-mail</b></label>
@@ -17,7 +17,7 @@
             <input type="password" id="password_field2" placeholder="Enter Password Again" name="psw2" required>
             <br>
 
-            <button type="button" onclick="signup(); return false;">Sign Up</button>
+            <button type="submit">Sign Up</button>
             <a href="login"><button type="button" class="cancelbtn">Cancel</button></a>
         </div>
 
@@ -37,5 +37,13 @@
           firebase.initializeApp(firebaseConfig);
         </script>
         <script src="signup.js"></script>
+        <script>
+
+          // const form = document.querySelector('form');
+          // form.addEventListener('submit',(ev)=>{
+          //   // do stuff before sending the form data to server
+            
+          // });
+        </script>
     </form>
 </body>
